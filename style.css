@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: #f5ebf5;
+    background-image: 
+                linear-gradient(to right, #8686863b 1px, transparent 1px), 
+                linear-gradient(to bottom, #8686863b 1px, transparent 1px);
+    background-size: 80px 80px;
+}
+
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-inline: 50px;
+    position: relative;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    border-radius: 0px;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 6px 6px 0px 0px #7c4775;
+    border: 2px solid;
+}
+
+.contact-form-title h2{
+    font-weight: 600;
+    color: #7c4775;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.contact-form-title hr{
+    border: none;
+    width: 160px;
+    height: 5px;
+    background-color: #7c4775;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.inputs{
+    width: 400px;
+    height: 55px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    
+    box-shadow: 4px 5px 0px 0px #7c4775;
+    color: #6e3f68;
+    border: 2px solid #7c4775;
+    font-size: 18px;
+}
+
+.contact-form textarea{
+    height: 160px;
+    padding-top: 15px;
+    border-radius: 0px;
+    resize: vertical;
+}
+
+
+.inputs:focus{
+    border: 2px solid #ddafdc;
+    box-shadow: 4px 5px 0px 0px #ddafdc;
+}
+
+.inputs::placeholder{
+    color: #7c4775;
+    font-size: 16px;
+}
+
+button{
+    padding: 15px 30px;
+    width: 100%;
+    border-radius: 0px;
+    border: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+    background: linear-gradient(90deg, #1b1f35, #4d4259);
+    background: #fe7387;
+    box-shadow: 5px 5px 0px 0px #b1505e;
+}
+
+button:active {
+    transform: scale(0.95); 
+    box-shadow: 2px 2px 0px 0px #3d1a1f; 
+    background-color: #b1505e; 
+}
+
+
+.image-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-container img#logo{
+    width: 500px;
+}
+
+@media (max-width:800px){
+    .inputs{
+        width: 80vw;
+    }
+    .image-container{
+        display: none;
+    }
+}
